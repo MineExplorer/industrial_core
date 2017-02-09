@@ -2,10 +2,11 @@ IDRegistry.genItemID("nanoSaber");
 Item.createItem("nanoSaber", "Nano Saber", {name: "nano_saber", meta: 0}, {stack: 1});
 
 Callback.addCallback("PostLoaded", function(){
-	Recipes.addShaped({id: ItemID.quantumHelmet, count: 1, data: Item.getMaxDamage(ItemID.quantumHelmet)}, [
+	Recipes.addShaped({id: ItemID.nano_saber, count: 1, data: Item.getMaxDamage(ItemID.nano_saber)}, [
 		"ca ",
-		"ca "
-	], ['bxb', 'x', ItemID.storageCrystal, -1, 'a', ItemID.plateAlloy, 0, 'b', ItemID.carbonPlate, 0], RECIPE_FUNC_TRANSPORT_ENERGY);
+		"ca ",
+	 	"bxb"
+	], ['x', ItemID.storageCrystal, -1, 'a', ItemID.plateAlloy, 0, 'b', ItemID.carbonPlate, 0, 'c', 348], RECIPE_FUNC_TRANSPORT_ENERGY);
 });
 
 ChargeItemRegistry.registerItem(ItemID.nanoSaber, 100000, 1, true, 10);

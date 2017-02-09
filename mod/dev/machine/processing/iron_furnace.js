@@ -11,7 +11,7 @@ Callback.addCallback("PostLoaded", function(){
 		" x ",
 		"x x",
 		"x#x"
-	], ['#', 61, -1, 'x', ItemID.plateIron]);
+	], ['#', 61, -1, 'x', ItemID.plateIron, -1]);
 });
 
 
